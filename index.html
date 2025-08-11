@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="fr" class="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendura Ui Kits</title>
+  <link rel="shortcut icon" href="./assets/vendura-DMOjBJQC.svg" type="image/x-icon" />
+
+  <!-- prettier-ignore -->
+  <script>
+    const prefix = "panera-mg/";
+    const system = window.matchMedia("(prefers-color-scheme: dark)").matches ?
+      "dark" :
+      "light";
+    const color = localStorage
+      .getItem(`${prefix}theme/activeColor`)
+      ?.replace(/"/g, "");
+    const theme =
+      localStorage.getItem(`${prefix}theme/activeTheme`)?.replace(/"/g, "") ||
+      system;
+    const direction =
+      localStorage.getItem(`${prefix}theme/activeDirection`)?.replace(/"/g, "") ||
+      "ltr";
+    if (color)
+      document.documentElement.style.setProperty("--colors-primary", color);
+    document.documentElement.classList.remove("light", "dark");
+    document.documentElement.classList.add(theme === "system" ? system : theme);
+    document.documentElement.setAttribute("dir", direction);
+
+  </script>
+
+  <script type="module" crossorigin src="./assets/main-m9_5tgNs.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-DpN-YkZK.css">
+</head>
+
+<body class="font-sans text-base overflow-x-hidden" light="bg-light text-body-text-color-light" dark="bg-dark text-body-text-color-dark">
+  <!-- prettier-ignore -->
+  <nav light="bg-elevated-light border-divider-light" dark="bg-elevated-dark border-divider-dark" class="py-4 border-b">
+    <div class="app-container flex items-center justify-between">
+      <a href="#" class="flex items-center">
+        <div class="i-tabler-menu-deep me-3"></div>
+        <span>Menu</span>
+      </a>
+
+      <a href="#" class="text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" viewBox="0.00 0.00 1784.00 1484.00" height="40px">
+          <path fill="currentColor" d="M 291.65 0.00
+                Q 493.49 335.65 555.38 437.86
+                Q 630.99 562.73 662.12 612.66
+                Q 672.72 629.66 677.98 637.89
+                A 1.23 1.22 -31.7 0 0 679.65 638.28
+                Q 681.06 637.45 682.59 635.58
+                Q 689.21 627.54 695.82 617.31
+                C 709.17 596.65 721.73 575.34 732.43 553.20
+                C 736.87 544.03 740.68 532.88 734.88 523.28
+                Q 734.63 522.87 731.68 517.77
+                Q 703.51 468.98 636.16 356.82
+                Q 513.56 152.65 475.44 88.57
+                Q 440.26 29.42 432.11 14.92
+                Q 429.22 9.77 428.55 8.44
+                A 2.20 2.18 -33.8 0 1 429.09 5.77
+                C 431.85 3.45 438.38 2.80 442.01 2.49
+                Q 455.11 1.38 471.75 1.16
+                Q 505.21 0.73 549.25 1.22
+                Q 611.12 1.91 718.06 3.16
+                A 1.06 1.05 -14.8 0 1 718.95 3.67
+                Q 776.99 101.75 821.76 176.26
+                Q 849.90 223.10 876.34 262.42
+                Q 885.47 275.99 890.20 281.30
+                Q 891.72 283.01 892.76 283.86
+                A 0.68 0.67 -52.4 0 0 893.73 283.73
+                Q 896.95 279.22 901.58 271.84
+                Q 928.26 229.27 949.99 193.49
+                Q 1011.32 92.48 1064.90 3.45
+                A 0.54 0.52 14.5 0 1 1065.36 3.19
+                Q 1297.93 2.05 1476.27 1.36
+                C 1566.59 1.02 1664.42 1.06 1756.75 2.96
+                Q 1770.43 3.25 1784.00 4.46
+                Q 1784.00 4.58 1784.00 4.69
+                Q 1763.55 40.41 1742.64 75.38
+                C 1558.57 383.27 1375.06 687.43 1164.81 1035.32
+                Q 1027.44 1262.63 935.05 1414.06
+                Q 914.79 1447.27 894.66 1479.65
+                Q 893.88 1480.90 891.85 1483.53
+                A 0.51 0.50 -50.1 0 1 891.13 1483.60
+                Q 890.00 1482.63 889.10 1481.39
+                Q 882.77 1472.76 875.68 1461.83
+                C 846.97 1417.61 821.41 1374.46 792.53 1325.22
+                Q 770.24 1287.22 753.62 1257.38
+                Q 750.00 1250.89 747.78 1246.10
+                A 2.77 2.76 46.3 0 1 747.83 1243.67
+                Q 749.61 1240.19 753.03 1234.28
+                Q 781.58 1184.83 836.43 1092.67
+                C 935.62 926.01 1049.36 736.44 1284.69 343.70
+                Q 1314.86 293.36 1332.56 263.31
+                C 1334.73 259.64 1336.63 255.06 1330.59 253.66
+                Q 1324.31 252.21 1317.95 252.03
+                C 1289.31 251.25 1256.14 251.65 1209.82 252.03
+                A 0.63 0.62 15.0 0 0 1209.28 252.34
+                Q 1015.35 576.99 840.43 867.94
+                Q 757.47 1005.93 700.51 1098.04
+                Q 685.86 1121.72 679.64 1131.13
+                A 0.74 0.74 0.0 0 1 678.40 1131.12
+                Q 668.24 1115.15 654.64 1092.86
+                Q 578.12 967.47 463.54 777.71
+                C 323.11 545.14 174.08 297.86 32.46 60.30
+                Q 16.06 32.79 0.00 5.09
+                Q 0.00 4.83 0.00 4.58
+                Q 3.71 3.52 7.75 3.24
+                C 43.09 0.78 78.50 0.52 113.90 0.00
+                L 291.65 0.00
+                Z" />
+        </svg>
+      </a>
+
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./assets/avatar-Bld2XJWk.jpg" alt="Iharena" width="42px" height="42px" class="rounded-lg object-cover" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- prettier-ignore -->
+  <nav light="border-divider-light" dark="bg-elevated-dark border-divider-dark" class="border-t fixed bottom-0 left-0 right-0 py-3 flex md:hidden">
+    <ul class="flex items-center w-full">
+      <li class="flex-1">
+        <a href="#" class="flex flex-col gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-width-1 w-6 h-6" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105"></path>
+            <path d="M16 15c-2.21 1.333 -5.792 1.333 -8 0"></path>
+          </svg>
+
+          <span class="text-sm fw-500"> Menu </span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="#" class="flex flex-col gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-width-1 w-6 h-6" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+            <path d="M21 21l-6 -6"></path>
+          </svg>
+
+          <span class="text-sm fw-500"> Recherche </span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="#" class="flex flex-col gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-width-1 w-6 h-6" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M14.017 18l-2.017 2l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.153 5.784"></path>
+            <path d="M15.99 20l4.197 -4.223a2.81 2.81 0 0 0 0 -3.948a2.747 2.747 0 0 0 -3.91 -.007l-.28 .282l-.279 -.283a2.747 2.747 0 0 0 -3.91 -.007a2.81 2.81 0 0 0 -.007 3.948l4.182 4.238z"></path>
+          </svg>
+
+          <span class="text-sm fw-500"> Favoris </span>
+        </a>
+      </li>
+      <li class="flex-1">
+        <a href="#" class="flex flex-col gap-2 items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-width-1" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+            <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+          </svg>
+
+          <span class="text-sm fw-500"> Mon compte </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- prettier-ignore -->
+  <nav light="bg-white border-divider-light" dark="bg-elevated-dark border-divider-dark" class="fixed right-0 top-0 bottom-0 w-full sm:w-[400px] border-l z-1 customizer-sidebar hidden translate-x-full transition-transform duration-200 ease-in" data-show-when-loaded>
+    <div class="px-6 py-2 border-b flex justify-between items-center" light="border-divider-light" dark="border-divider-dark">
+      <div>
+        <h2 class="fw-500">Customiseur de template</h2>
+        <p class="text-sm" light="text-body-text-secondary-light" dark="text-body-text-secondary-dark">
+          Customisez en temps réel.
+        </p>
+      </div>
+
+      <div class="flex gap-2 text-2xl">
+        <div class="i-tabler-refresh cursor-pointer"></div>
+        <div class="i-tabler-x cursor-pointer customizer-sidebar__closer"></div>
+      </div>
+    </div>
+
+    <div class="px-6 py-4">
+      <div class="fw-500 mb-2">Primary Color</div>
+
+      <div class="flex flex-nowrap gap-2 mb-4">
+        <div class="border-2 customizer-color w-12 h-12 flex items-center justify-center rounded-md cursor-pointer" light="border-primary" dark="border-primary" hover="border-primary" data-active="true">
+          <label for="customizer-color-primary-pink" class="cursor-pointer">
+            <span class="w-8 h-8 bg-[#22CE89] flex rounded"></span>
+          </label>
+          <input type="checkbox" id="customizer-color-primary-pink" class="hidden" data-color="#22CE89" />
+        </div>
+
+        <div class="border-2 customizer-color w-12 h-12 flex items-center justify-center rounded-md cursor-pointer" light="border-divider-light" dark="border-divider-dark" hover="border-primary">
+          <label for="customizer-color-primary-violet" class="cursor-pointer">
+            <span class="w-8 h-8 bg-[#7367f0] flex rounded"></span>
+          </label>
+          <input type="checkbox" id="customizer-color-primary-violet" class="hidden" data-color="#7367f0" />
+        </div>
+
+        <div class="border-2 customizer-color w-12 h-12 flex items-center justify-center rounded-md cursor-pointer" light="border-divider-light" dark="border-divider-dark" hover="border-primary">
+          <label for="customizer-color-primary-teal" class="cursor-pointer">
+            <span class="w-8 h-8 bg-[#ff385c] flex rounded"></span>
+          </label>
+          <input type="checkbox" id="customizer-color-primary-teal" class="hidden" data-color="#ff385c" />
+        </div>
+
+        <div class="border-2 customizer-color w-12 h-12 flex items-center justify-center rounded-md cursor-pointer" light="border-divider-light" dark="border-divider-dark" hover="border-primary">
+          <label for="customizer-color-primary-amber" class="cursor-pointer">
+            <span class="w-8 h-8 bg-[#FFAB1D] flex rounded"></span>
+          </label>
+          <input type="checkbox" id="customizer-color-primary-amber" class="hidden" data-color="#FFAB1D" />
+        </div>
+
+        <div class="border-2 customizer-color w-12 h-12 flex items-center justify-center rounded-md cursor-pointer" light="border-divider-light" dark="border-divider-dark" hover="border-primary">
+          <label for="customizer-color-primary-azure blue" class="cursor-pointer">
+            <span class="w-8 h-8 bg-[#2092EC] flex rounded"></span>
+          </label>
+          <input type="checkbox" id="customizer-color-primary-azure blue" class="hidden" data-color="#2092EC" />
+        </div>
+
+        <div class="border-2 customizer-color w-12 h-12 flex items-center justify-center rounded-md cursor-pointer" light="border-divider-light" dark="border-divider-dark" hover="border-primary">
+          <label for="customizer-color-primary-lime green" class="cursor-pointer">
+            <span class="w-8 h-8 bg-[#e12d2d] flex rounded"></span>
+          </label>
+          <input type="checkbox" id="customizer-color-primary-lime green" class="hidden" data-color="#e12d2d" />
+        </div>
+      </div>
+
+      <div class="fw-500 mb-2">Theme</div>
+
+      <div class="flex flex-nowrap gap-2 mb-4">
+        <div class="flex-1 customizer-theme cursor-pointer">
+          <div class="border-2 flex items-center h-11 justify-center rounded-md mb-1 customizer-theme__element" light="border-primary" dark="border-primary" hover="border-primary" data-active="true">
+            <label for="customizer-theme-light" class="cursor-pointer">
+              <div class="i-tabler-sun w-6 h-6"></div>
+            </label>
+            <input type="checkbox" id="customizer-theme-light" class="hidden" data-theme="light" />
+          </div>
+          <div class="text-sm text-body-text-secondary-light">Light</div>
+        </div>
+        <div class="flex-1 customizer-theme cursor-pointer">
+          <div class="border-2 flex items-center h-11 justify-center rounded-md mb-1 customizer-theme__element" light="border-divider-light" dark="border-divider-dark" hover="border-primary" data-active="true">
+            <label for="customizer-theme-dark" class="cursor-pointer">
+              <div class="i-tabler-moon w-6 h-6"></div>
+            </label>
+            <input type="checkbox" id="customizer-theme-dark" class="hidden" data-theme="dark" />
+          </div>
+          <div class="text-sm text-body-text-secondary-light">Dark</div>
+        </div>
+        <div class="flex-1 customizer-theme cursor-pointer">
+          <div class="border-2 flex items-center h-11 justify-center rounded-md mb-1 customizer-theme__element" light="border-divider-light" dark="border-divider-dark" hover="border-primary" data-active="true">
+            <label for="customizer-theme-system" class="cursor-pointer">
+              <div class="i-tabler-device-desktop-analytics w-6 h-6"></div>
+            </label>
+            <input type="checkbox" id="customizer-theme-system" class="hidden" data-theme="system" />
+          </div>
+          <div class="text-sm text-body-text-secondary-light">System</div>
+        </div>
+      </div>
+
+      <div class="fw-500 mb-2">Direction</div>
+
+      <div class="flex flex-nowrap gap-2">
+        <div class="customizer-direction cursor-pointer">
+          <div class="border-2 flex items-center justify-center rounded-md mb-1 customizer-direction__element" light="border-primary" dark="border-primary" hover="border-primary" data-active="true">
+            <label for="customizer-direction-ltr" class="cursor-pointer">
+              <svg data-v-638132f3="" xmlns="http://www.w3.org/2000/svg" width="104" height="66" fill="none" class="custom-radio-image">
+                <rect width="104" height="66" fill="currentColor" fill-opacity=".02" rx="4"></rect>
+                <rect width="24.098" height="57.589" x="5.202" y="4.121" fill="currentColor" fill-opacity=".08" rx="2"></rect>
+                <rect width="13.854" height="2.092" x="10.323" y="16.87" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="9.879" height="2.092" x="10.323" y="25.562" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="12.383" height="2.092" x="10.323" y="34.254" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="6.088" height="2.092" x="10.323" y="42.946" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="8.091" height="2.092" x="10.323" y="51.638" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="62.389" height="57.589" x="35.514" y="4.121" fill="currentColor" fill-opacity=".08" rx="2"></rect>
+                <rect width="13.854" height="2.092" x="43.758" y="14.183" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="32.801" height="2.092" x="43.758" y="22.875" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="41.208" height="2.092" x="43.758" y="31.567" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="32.801" height="2.092" x="43.758" y="40.259" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="5.775" height="2.092" x="43.758" y="48.952" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+              </svg>
+            </label>
+            <input type="checkbox" id="customizer-direction-ltr" class="hidden" data-direction="ltr" />
+          </div>
+          <div class="text-sm text-body-text-secondary-light">Left to right</div>
+        </div>
+
+        <div class="customizer-direction cursor-pointer">
+          <div class="border-2 flex items-center justify-center rounded-md mb-1 customizer-direction__element" light="border-divider-light" dark="border-divider-dark" hover="border-primary">
+            <label for="customizer-direction-rtl" class="cursor-pointer">
+              <svg data-v-638132f3="" xmlns="http://www.w3.org/2000/svg" width="104" height="66" fill="none" class="custom-radio-image">
+                <rect width="104" height="66" fill="currentColor" fill-opacity=".02" rx="4"></rect>
+                <rect width="24.098" height="57.589" x="73.476" y="4.121" fill="currentColor" fill-opacity=".08" rx="2"></rect>
+                <rect width="13.854" height="2.092" x="78.599" y="16.87" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="9.879" height="2.092" x="82.571" y="25.562" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="12.383" height="2.092" x="80.069" y="34.254" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="6.088" height="2.092" x="86.363" y="42.946" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="8.091" height="2.092" x="84.361" y="51.638" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="62.389" height="57.589" x="5.202" y="4.121" fill="currentColor" fill-opacity=".08" rx="2"></rect>
+                <rect width="13.854" height="2.092" x="45.709" y="14.183" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="32.801" height="2.092" x="26.762" y="22.875" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="41.208" height="2.092" x="18.355" y="31.567" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="32.801" height="2.092" x="26.762" y="40.259" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+                <rect width="5.775" height="2.092" x="53.788" y="48.952" fill="currentColor" fill-opacity=".3" rx="1.046"></rect>
+              </svg>
+            </label>
+            <input type="checkbox" id="customizer-direction-rtl" class="hidden" data-direction="rtl" />
+          </div>
+          <div class="text-sm text-body-text-secondary-light">Right to left</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div>
+    <button class="text-[22px] w-8 h-8 bg-primary hover:brightness-120 flex items-center text-white justify-center rounded-md absolute -right-[4px] z-0 top-[50%] -translate-y-1/2 cursor-pointer customizer-sidebar__toggler">
+      <div class="i-tabler-settings animate-spin"></div>
+    </button>
+  </div>
+
+</body>
+
+</html>
