@@ -30,13 +30,13 @@
 
   </script>
 
-  <script type="module" crossorigin src="./assets/main-Cd53BCNZ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-BEj6u_Q5.css">
+  <script type="module" crossorigin src="./assets/main-JfZHJ_tM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-D0gIJPFg.css">
 </head>
 
 <body class="font-sans text-base overflow-x-hidden" light="bg-light text-body-text-color-light" dark="bg-dark text-body-text-color-dark">
   <!-- prettier-ignore -->
-  <nav light="bg-elevated-light border-divider-light" dark="bg-elevated-dark border-divider-dark" class="py-4 border-b">
+  <nav light="bg-elevated-light border-divider-light" dark="bg-elevated-dark border-divider-dark" class="py-4 border-b fixed top-0 left-0 right-0">
     <div class="app-container flex items-center justify-between">
       <a href="#" class="flex items-center">
         <div class="i-tabler-menu-deep me-3"></div>
@@ -127,71 +127,78 @@
   <!-- prettier-ignore -->
 
   <!-- prettier-ignore -->
-  <div class="app-container my-6">
-    <nav class="widget">
-      <ul class="flex flex-wrap gap-5">
-        <li><a href="#" class="widget-submenu submenu-active">System settings</a></li>
-        <li><a href="#" class="widget-submenu">Stores</a></li>
-        <li><a href="#" class="widget-submenu">Pos settings</a></li>
-        <li><a href="#" class="widget-submenu">Categories</a></li>
-        <li><a href="#" class="widget-submenu">Units</a></li>
-        <li><a href="#" class="widget-submenu">Currencies</a></li>
-        <li><a href="#" class="widget-submenu">Mail settings</a></li>
-        <li><a href="#" class="widget-submenu">SMS settings</a></li>
-        <li><a href="#" class="widget-submenu">Roles & permissions</a></li>
-        <li><a href="#" class="widget-submenu">Payment methods</a></li>
-        <li><a href="#" class="widget-submenu">Notifications</a></li>
-        <li><a href="#" class="widget-submenu">Dashboard</a></li>
-        <li><a href="#" class="widget-submenu">Translations</a></li>
-        <li><a href="#" class="widget-submenu">Upgrade</a></li>
-        <li><a href="#" class="widget-submenu">Backup</a></li>
-      </ul>
-    </nav>
-  </div>
+  <main class="mt-25">
 
-  <!-- prettier ignore -->
-  <div class="app-container">
-    <div class="widget">
-      <h2 class="fw-medium text-xl mb-6">System settings</h2>
+    <!-- prettier-ignore -->
+    <div class="app-container mb-6">
+      <nav class="widget">
+        <ul class="flex flex-wrap gap-5">
+          <li><a href="#" class="widget-submenu submenu-active">System settings</a></li>
+          <li><a href="#" class="widget-submenu">Stores</a></li>
+          <li><a href="#" class="widget-submenu">Pos settings</a></li>
+          <li><a href="#" class="widget-submenu">Categories</a></li>
+          <li><a href="#" class="widget-submenu">Units</a></li>
+          <li><a href="#" class="widget-submenu">Currencies</a></li>
+          <li><a href="#" class="widget-submenu">Mail settings</a></li>
+          <li><a href="#" class="widget-submenu">SMS settings</a></li>
+          <li><a href="#" class="widget-submenu">Roles & permissions</a></li>
+          <li><a href="#" class="widget-submenu">Payment methods</a></li>
+          <li><a href="#" class="widget-submenu">Notifications</a></li>
+          <li><a href="#" class="widget-submenu">Dashboard</a></li>
+          <li><a href="#" class="widget-submenu">Translations</a></li>
+          <li><a href="#" class="widget-submenu">Upgrade</a></li>
+          <li><a href="#" class="widget-submenu">Backup</a></li>
+        </ul>
+      </nav>
+    </div>
 
-      <div class="columns lg:columns-2 gap-6">
-        <div class="vendura-form mb-6">
-          <label for="default_email">Email</label>
-          <input type="email" id="default_email" class="vendura-field" placeholder="Enter email" />
+    <!-- prettier ignore -->
+    <div class="app-container">
+      <div class="widget">
+        <h2 class="fw-medium text-xl mb-6">System settings</h2>
+
+        <div class="columns lg:columns-2 gap-6">
+          <div class="vendura-form mb-6">
+            <label for="default_email">Email</label>
+            <input type="email" id="default_email" class="vendura-field" placeholder="Enter email" />
+          </div>
+
+          <div class="vendura-form mb-6">
+            <label for="company_name">Company name</label>
+            <input type="text" id="company_name" class="vendura-field" placeholder="Enter company name" />
+          </div>
         </div>
 
-        <div class="vendura-form mb-6">
-          <label for="company_name">Company name</label>
-          <input type="text" id="company_name" class="vendura-field" placeholder="Enter company name" />
+        <div class="columns lg:columns-2 gap-6">
+          <div class="vendura-form mb-6">
+            <label for="company_phone">Company phone</label>
+            <input type="text" id="company_phone" class="vendura-field" placeholder="Enter company phone" />
+          </div>
+          <div class="vendura-form">
+            <label for="developped_by">Developped by</label>
+            <input type="text" id="developped_by" class="vendura-field" placeholder="Developped by" />
+          </div>
         </div>
-      </div>
 
-      <div class="columns lg:columns-2 gap-6">
-        <div class="vendura-form mb-6">
-          <label for="company_phone">Company phone</label>
-          <input type="text" id="company_phone" class="vendura-field" placeholder="Enter company phone" />
+        <div class="columns mt-6 lg:mt-3 mb-6">
+          <div class="vendura-form">
+            <label for="address">Address</label>
+            <textarea id="address" class="vendura-field" placeholder="Enter address"></textarea>
+          </div>
         </div>
-        <div class="vendura-form">
-          <label for="developped_by">Developped by</label>
-          <input type="text" id="developped_by" class="vendura-field" placeholder="Developped by" />
+
+        <div class="flex justify-between">
+          <button type="reset" class="px-10 py-3 bg-light-input dark:bg-dark-input hover:brightness-120 rounded-lg leading-4">
+            Cancel
+          </button>
+          <button type="submit" class="px-10 py-3 bg-primary text-white hover:brightness-120 rounded-lg leading-4">
+            Submit
+          </button>
         </div>
-      </div>
-
-      <div class="vendura-form mt-6 lg:mt-3 mb-6">
-        <label for="address">Address</label>
-        <textarea id="address" class="vendura-field" placeholder="Enter address"></textarea>
-      </div>
-
-      <div class="flex justify-between">
-        <button type="reset" class="px-10 py-3 bg-light-input dark:bg-dark-input hover:brightness-120 rounded-lg leading-4">
-          Cancel
-        </button>
-        <button type="submit" class="px-10 py-3 bg-primary text-white hover:brightness-120 rounded-lg leading-4">
-          Submit
-        </button>
       </div>
     </div>
-  </div>
+
+  </main>
 
   <!-- prettier-ignore -->
   <nav light="bg-white border-divider-light" dark="bg-elevated-dark border-divider-dark" class="fixed right-0 top-0 bottom-0 w-full sm:w-[400px] border-l z-1 customizer-sidebar hidden translate-x-full transition-transform duration-200 ease-in" data-show-when-loaded>
