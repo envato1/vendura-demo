@@ -30,8 +30,8 @@
 
   </script>
 
-  <script type="module" crossorigin src="./assets/main-JfZHJ_tM.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-D0gIJPFg.css">
+  <script type="module" crossorigin src="./assets/main-Do7hKvEJ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-7iJUL99v.css">
 </head>
 
 <body class="font-sans text-base overflow-x-hidden" light="bg-light text-body-text-color-light" dark="bg-dark text-body-text-color-dark">
@@ -157,44 +157,51 @@
       <div class="widget">
         <h2 class="fw-medium text-xl mb-6">System settings</h2>
 
-        <div class="columns lg:columns-2 gap-6">
-          <div class="vendura-form mb-6">
-            <label for="default_email">Email</label>
-            <input type="email" id="default_email" class="vendura-field" placeholder="Enter email" />
+        <form action="#">
+          <div class="mb-6 bg-light-input dark:bg-dark-input w-45 h-45 rounded-lg">
+            <label for="app_logo" class="w-full h-full flex items-center justify-center">Drag your Logo</label>
+            <input type="file" id="app_logo" class="hidden" />
           </div>
 
-          <div class="vendura-form mb-6">
-            <label for="company_name">Company name</label>
-            <input type="text" id="company_name" class="vendura-field" placeholder="Enter company name" />
-          </div>
-        </div>
+          <div class="columns lg:columns-2 gap-6">
+            <div class="vendura-form mb-6">
+              <label for="default_email">Email</label>
+              <input type="email" id="default_email" class="vendura-field" placeholder="Enter email" />
+            </div>
 
-        <div class="columns lg:columns-2 gap-6">
-          <div class="vendura-form mb-6">
-            <label for="company_phone">Company phone</label>
-            <input type="text" id="company_phone" class="vendura-field" placeholder="Enter company phone" />
+            <div class="vendura-form mb-6">
+              <label for="company_name">Company name</label>
+              <input type="text" id="company_name" class="vendura-field" placeholder="Enter company name" />
+            </div>
           </div>
-          <div class="vendura-form">
-            <label for="developped_by">Developped by</label>
-            <input type="text" id="developped_by" class="vendura-field" placeholder="Developped by" />
-          </div>
-        </div>
 
-        <div class="columns mt-6 lg:mt-3 mb-6">
-          <div class="vendura-form">
-            <label for="address">Address</label>
-            <textarea id="address" class="vendura-field" placeholder="Enter address"></textarea>
+          <div class="columns lg:columns-2 gap-6">
+            <div class="vendura-form mb-6">
+              <label for="company_phone">Company phone</label>
+              <input type="text" id="company_phone" class="vendura-field" placeholder="Enter company phone" />
+            </div>
+            <div class="vendura-form">
+              <label for="developped_by">Developped by</label>
+              <input type="text" id="developped_by" class="vendura-field" placeholder="Developped by" />
+            </div>
           </div>
-        </div>
 
-        <div class="flex justify-between">
-          <button type="reset" class="px-10 py-3 bg-light-input dark:bg-dark-input hover:brightness-120 rounded-lg leading-4">
-            Cancel
-          </button>
-          <button type="submit" class="px-10 py-3 bg-primary text-white hover:brightness-120 rounded-lg leading-4">
-            Submit
-          </button>
-        </div>
+          <div class="columns mt-6 lg:mt-3 mb-6">
+            <div class="vendura-form">
+              <label for="address">Address</label>
+              <textarea id="address" class="vendura-field" placeholder="Enter address"></textarea>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <button type="reset" class="px-10 py-3 bg-light-input dark:bg-dark-input hover:brightness-120 rounded-lg leading-4">
+              Cancel
+            </button>
+            <button type="submit" class="px-10 py-3 bg-primary text-white hover:brightness-120 rounded-lg leading-4">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
